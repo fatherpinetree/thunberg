@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2 id="myText">Greta, you shouldn't be up here!</h2>
+		<img src="Greta_Thunberg.png" onclick="playVideo()" id="myImage">
+		<video src="thunberg.mp4" id="myVideo" style="display:none;"></video>
+	</div>
+	<script>
+		function playVideo() {
+			document.getElementById("myText").innerHTML = "Made by Father Pine Tree";
+			document.getElementById("myImage").style.display = "none";
+			document.getElementById("myVideo").style.display = "block";
+			document.getElementById("myVideo").play();
+		}
+	</script>
+</body>
+</html>
